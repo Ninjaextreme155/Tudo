@@ -1,0 +1,661 @@
+(*cores*)
+ --Aula1--
+    var amarelo = ass1{
+        covardia
+        felicidade
+        otimismo
+        alegria
+    }
+    var amarelo += usar1{
+        dar luz
+        dar calma
+        felicidade
+        chamar atenção
+    }
+    var amarelo += evitar1{
+        pode indicar algo barato
+        Spam
+    }
+    var vermelho = ass2{
+     ;   amor 
+        emoção
+        energia
+        raiva 
+        perigo
+    }
+    var vermelho += usar2{
+        comida
+        moda
+        entreterimento
+        serviços de emergencia
+        saude
+    }
+    var vermelho += evitar2{
+        luxo
+        natureza
+        serviços em geral
+    }
+    var laranja = ass3{
+        divertimento
+        ambição 
+        calor
+        cautela
+    }
+    var laranja += usar3{
+        comercio eletronico
+        entreterimento
+        call-to-action
+    }
+    var laranja += evitar3{
+        pode se tornar cansativo se muito explorado
+    }
+    var verde = ass4{
+        saude
+        natureza
+        dinheiro
+        sorte
+        inveja
+    }
+    var verde+= usar4{
+        relaxamento
+        turismo
+        financeiros
+        meio ambiente
+    }
+    var verde+= evitar4{
+        luxo
+        tecnologia
+        meninas adolecentes
+    }
+    var azul+= ass5{
+        competencia
+        sabedoria
+        calma
+        frio 
+    }
+    var azul+= usar5{
+        tecnologia
+        medicina
+        ciencias
+        governo
+    }
+    var azul+= evitar5{
+        comida(reduz apetite)
+    }
+    var roxo = ass6{
+        criatividade
+        poder
+        sabedoria
+        misterio
+    }
+    var roxo += usar6{
+        produtos de beleza
+        astrologia
+        ioga
+        espiritualidade
+        adolecente
+    }
+    var roxo += evitar6{
+        não prende muito a atenção
+        indiferente
+    }
+    var marrom = ass7{
+        terra
+        robustez
+        estabilidade
+        amizade
+    }
+    var marrom += usar7{
+        alimentação
+        imobiliaria
+        animais
+        finanças
+    }
+    var marrom += evitar7{
+        cor considerada conservadora
+    }
+    var preto = ass8{
+        elegancia
+        autoridade
+        misterio
+        morte
+    }
+    var preto +=usar8{
+        luxo
+        moda
+        marketing
+        cosmeticos
+    }
+    var preto += evitar8{
+        desconforto
+        medo
+    }
+    var branco = ass9{
+        pureza
+        limpeza
+        felicidade
+        segurança
+    }
+    var branco += usar9{
+        medicina
+        saúde 
+        tecnologia
+        luxo (com preto,ouro,cinza)
+    }
+    var branco += evitar9{
+        não chama atenção
+        deve ser combinado
+    }
+    var cinza = ass10{
+        formalidade
+        sofisticação
+        frieza
+        indiferença
+    }
+    var cinza += usar10{
+        bens de luxo
+        efeito calmante
+    }
+    var cinza +=evitar10{
+        da a sensação de frieza
+    }
+    var rosa = ass11{
+        amor
+        romance
+        sinceridade
+        cuidados
+    }
+    var rosa += usar11{
+        produtosfemininos
+        cosmeticos
+    }
+    var rosa += evitar11{
+        pode tornar muito sentimental
+    }
+ --Aula2--
+    var cor-azul = {
+        blue
+        #0000ff
+        (0 0 255)
+        hsl(240 100%  50%)
+    }
+    var cor-branca = {
+        white
+        #ffffff
+        (255 255 255)
+        hsl(0, 0%, 100%)
+    }
+    var cor-preta = {
+        black
+        #000000
+        (0 0 0)
+        hsl(0, 0%, 0%)
+    }
+    var explicação = {
+        decimal :0 1 2 3 4 5 6 7 8 9
+        hexadecimal :0 1 2 3 4 5 6 7 8 9 A B C D E F{
+           #ffffff = # : começo da cor, ff : vermelho, ff : verde, ff: azul; todos vao no hexadecimal de 0 a f 
+        }
+        RGB: 0 a 255{
+            rgb(0 0 0) = 0 : vermelho, 0: verde, 0: vermelho
+        }
+        HSL: Hue = Matiz, Saturation = Saturação, Luminosity = Luminosidade
+        Adicionando o a em qualquer um dele pode se mexer na transparencia
+    }
+ --Aula3--
+    var Circulo_cromatico = {
+        Exp: ele serve para harmoniazar as coisas.
+        Sincronia é uma poderosa arma do designer para criar
+        uma comodidade visual, para acharem bonito os projetos
+        que você for fazer ficar bonita.
+        Uma outra coisa importante alem da simetria, é a cor da aula 1.
+        12 cores principais : 
+        cores primarias{
+           amarelo 
+           vermelho
+           azul
+        }
+        cores secundarias{
+            verde
+            laranja
+            violeta
+        }
+        cores terciarias{
+            amerelo-esverdeado/ verde claro
+            amarelo-alaranjado/ amarelo escuro
+            vermelho-alaranjado/ laranja escuro
+            vermelho-arroxeado/ roxo-purpura
+            azul-arroxeado/ roxo claro
+            azul-esverdeado/ verde escuro
+        }
+        cores quentes{
+            amarelo
+            amarelo-alaranjado
+            laranja
+            vermelho-alaranjado
+            vermelho
+            vermelho-arroxeado
+        }
+        cores frias{
+            roxo
+            azul-arroxeado
+            azul
+            azul-esverdeado
+            verde
+            amerelo-esverdeado
+        }
+        *Uma Paleta: vai ter de uma a cinco cores no maximo, tirando preto e branco
+
+        *Cores Complementares: sao cores extremas uma da outra no circulo cromatico
+
+        *Cores Analogas: sao cores do lado da cor primaria e secundaria 
+
+        *Cores Analogas Relacionadas: É uma cor analoga que vc pegas as duas primeiras e depois pula
+
+        *Cores Intercaladas: é parecida com a anterior so que vc pega uma cor pula uma pega a segunda e pula de novo para pegar a terceira
+
+        *Cores Triadicas: quando voce pega uma cor pula 3 pega a segunda pula mais 3 assim formando um triangulo equilatero
+
+        *Cores Em Quadrado: voce pega uma cor pula 2 pega a segunda pula mais 2 pega a terceira pula mais 2 e pega a quarta assim formando um quadrado 
+
+        *Cor Tetradica: voce uma cor pega a complementar dela e depois pega outra cor e faz a complementar assim formando um retangulo
+        
+        *Monocromia: pegar uma cor e mudar a saturação e o brilho mudando isso tres vez se consegue uma Paleta  de 4 cores parecidas mas que nao estao no  circulo cromatico
+    }
+ --Aula4--
+    var Paleta de Cores{ 
+        sites para montar paletas de cor
+       * https://color.adobe.com/pt/create/color-wheel
+       * https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
+       * https://coolors.co/447604-6cc551-9ffcdf-52ad9c-47624f
+    }
+ --Aula5--
+    var capturar Cores = {
+        usando colorzila no chrome em qualquer site tem com saber a cor de cada componente de cada site pesquisando no adobe color.
+    }
+ --Aula6--
+    var degrade = {
+        normalmente se usa para pintar um cenario ou um elemento se usa:
+        background-color: color;
+        mas para fezer gradiente se usa:
+        background-image: linear-gradient(direction,color begin,color final) e background-image:radial-gradient(circle,#282A38 1%,#616487 40%,#8488B8);
+        var direction = ex: to right, 90deg
+        EX: radial serve para em formas como circle que faz um gradiente me circulo. a porcentagem perto das cores servem para escolher a quantidade que vai ter dessa cor.
+        EX:background-image: linear-gradient(to right,white,blue),
+        background-image: linear-gradient(to bottom,#3fd57e,#1b5936)
+        var * = configuração global das CSS
+        
+    }
+ --Aula7--
+    var exemplo de cor = {
+        para nara não haver confusão usamos no CSS:
+        @charset "UTF-8";
+        foi usado no HTML5 o comando <main></main> é como se fosse uma div, so que é uma div especial que diz que esse é o conteudo principal
+        var CSS cor = {
+            box-shadow ele cria uma sombra no elemento mas essa sombra nao tem que ser algo aparente
+            a mesma coisa com text-shadow e a gente usa a cor mais escura da palheta e se nao for escuro o suficiente voce muda no painel arrastando para baixo e la tambem mudamos a clareza e deixar mais ou menos no meio.
+        }
+    }
+(*tipografia*)
+ --Aula1--
+  var teoria parte 1 = {
+    let como eram feitos os livros antigamente{
+        no seculo 15 na europa que produzia os livros eram
+        os monges copistas, ele se especializava em copiar livros.
+        em 1450 que johannes gutenberg foi quem que criou a prensa mecanica de tipos moveis, e isso escrevia em uma folha com tinta.
+    }
+    let tipografia = { tipografia vem de duas palavras gregas
+        tipo = týpos: significa impressão
+        grafia = graphía: signica escrita
+        tipografia é o estudo dos tipos que sao as letras entao é o estudos das letras
+    let letras = {
+        as letras trazem emoções junto com elas igual imagens e cores, um exemplo é amor que é representado com letras mais suaves ou a palavra importante que é representada com algo que vai chamar a atenção e que tras uma seriedade no momento, outro exemplo é 'Feito a Mão' que se escolhe letras que simulem que foi feito a Mão
+    }
+    }
+  }
+ --Aula2--
+  var Anatomia do tipo = {
+    quando voce vai contruir um site, você tem que saber as medidas para ver se elas se encaixam simetricamente no lugar que você que usar sua fonte
+        const metricos = {
+            let x = {
+                a letra x é muito importante, ela é usada para criar o resto da fonte, porque quando alguem vai construir uma fonte ela leva em consideração a altura x, ela definir a altura base de todas as letras minusculas
+            }
+            let maiusculas={ 
+                alem disso existe a altura das maiusculas que é até aonde vai uma letra maiuscula
+            }
+            let ascendente = {
+                que é o vazamento de de cima da altura x, tudo que sobrar da altura x e nao nao for maiuscula é ascendente
+            }
+            let descendente = {
+                é oque sobra da altura x para baixo e que nesse caso inclui as maiusculas tambem muitas vezes
+            }
+            let corpo = {
+                é a altura total que considera as maiusaculas,ascendente, altura x e descentente
+            }
+        const anatomicos = {
+            let serifa = {
+                é um pequenop traço que gera no final de algumas fontes, ela cria uma linha que serve para ter uma leitura melhor
+            }
+            let haste = {
+                esta na horizontal tipo k que uma ou no A que tem duas astes
+            }
+            let filete =  {
+                aparece entre duas hastes e esta na horizontal
+            }
+            let arco = {
+                o arco é um filete curvado ou tambem uma haste curvada
+            } 
+            let esporão = {
+                parece um salto de sapato e tem en algumas letras tipo o b, ele serve para segurar, ser a base da letra
+            }
+            let vertice = {
+                é uma parte ponteaguda da letra que tipo o A tem em cima dele ou o V tem em baixo
+            }
+            let terminal = {
+                você tem um elemento horizontal so que ele so esta preso a um lugar e nao a dois
+            }
+            let braço = {
+                um elemento que sai de uma haste e que se eleva para cima
+            }
+            let perna = {
+                um elemento que sai do braço, as vezes sai da haste, que vai para baixo
+            }
+            let pé = {
+                um elemento que fica em baixo da perna, um pé é onde existe as serifas as vezes
+            }
+            let espinha = {
+                um elemento que so existe na letra S, essas curvas, o S tem duas dessas curvas
+            }
+            let barriga = {
+                existe uma haste sai dois arcos e esses dois arcos juntos e oque forma a barriga
+            }
+            let olho = {
+                é o burraco dentro da letra que é fechado por todos os lados
+            }
+            let orelha = {
+                uma linha puxada na parte de cima de uma letra
+            }
+            let cauda = {
+                na parte descendente tem um puxadinho que tem tipo no g
+            }
+        const glifo = {
+            é uma letra, cada letra de um alfabeto é um glifo
+            let fonte = {
+                o conjunto de todos os glifos em uma determinada familia, a gente chama isso de fonte
+            }
+            let familia tipografica = {
+                light
+                normal 
+                seminegrito
+                negrito
+                extranegrito
+                nem toda fonte tem uma familia tipografica gigante, as vezes so tem um tipo de fonte, as vezes tem familias tipograficas, normalmente toda fonte tem normal e negrito, algumas so tem normal, mas todas tem normal
+            }
+          }
+          const categorias de fontes = {
+            let serifada = {
+                tem serifas nas letras
+            }
+            let sans-sefif = {
+                sem serifa, ele nao tem serifa
+            }
+            let monoespaçada = {
+                ela pode ser com ou sem serifa, todas as letras tem o mesmo espaço
+            }
+            let handwriting = {
+                ou fonte de script ou fonte escriptada, ela tenta simular a escrita a mão
+            }
+            let display = {
+                é a que não tem nenhuma das caracteristicas das de cima ela normalmente são comemorativas, normalmente são aquelas fonte que te levam a alguma ideia ou filme tipo jurrasic park que tem essa fonte
+            }
+          }
+        }
+    }
+  }
+ --Aula3--
+  var familia de fontes com CSS = {
+    existen varias fontes e cada uma tem suas caracteristica algumas tem serifa e outras nao, mas cada uma combina com um tipo, so que para ter fontes seguras que rodam em qualquer lugar, é necessario de um grupo
+    Ex: font-family: Arial, Helvetica, sans-serif;
+    se ele nao conseguir rodar arial ele tenta Helvetica e por ultimo sans-serif.
+  }
+ --Aula4--
+  var Tamanho de fonte e suas medidas = {
+    const Medidas Absolutas = {
+        cm,mm,in,px,pt,pc
+        cm: centimetro as vezes o navegador nao consegue chega a altura exigida porque existe telas diferentes
+        px:  pixels a mesma coisa pq tem dispositivos que o pixel é de outro tamanho
+        pt e pc, ponto e paica sao medidas de tipografia de papel entao nao vale muito para computador
+    }
+    const Medidas Relativas = {
+      em: a medida relativa ao tamanho atual da fonte
+      ex: medida relativa a altura x de uma fonte
+      rem: tipo o em mas a altura relativa ao root
+      vw: largura da sua tela entao ela é relativa a altura da sua tela
+      %: porcentagem
+    }
+    a que é aconselhada a usar é px e em
+  }
+ --Aula5--
+  var Peso, estilo e shorthand font = {
+    se usa dentro de font-family 'Work Sans' para mudar o peso da fonte se usa font-weight.
+    existe tipos normalmente usados que sao lighter,normal,bold e bolder
+    tem como mudar o peso por numero tambem 100 a 900, 100 é a mais leve e 900 é a mais pesada
+    outro que te diz o estilo é font-style
+    o sublinhado é text-decoration: underline
+    tem como complilar todas essas configuraçoes e o tamanha em uma so que se chama shorthand
+    const  shorthand font= {
+          font-style -> font-weight -> font-size -> font-family
+          font: italic bolder 3em 'Work Sans' sans-serif;
+    }
+  } 
+ --Aula6--
+  var Usando Google Fonts = {
+    https://fonts.google.com/ é aonde tem as fontes 'font-ext.html'
+  }
+ --Aula7--
+  var Usando fontes externas baixadas = {
+    https://www.dafont.com/pt/
+    @font-face {
+            font-family:Love ;
+            src: url('love\ story\ ttf.ttf');
+        } esse comando necessita de um arquivo de fonte e a partir do font-family voce criar uma fonte ex: h1{
+            font-family: 'Love', Times, serif;
+        }
+        tipos de formato()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype 
+        - truetype-aat (Apple Advanced Typography)
+        -svg
+  }
+ --Aula8--
+  var Capturando as fontes usadas em um site {
+    apartir de extensao do chrome fontes ninja tem como saber a fonte de qualquer site https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh/related?hl=pt-br
+  }
+ --Aula9--
+  var Detectando fontes dentro de imagens = {
+    para se achar uma fonte em uma imagem precisa de 3 sites: https://www.myfonts.com/pages/whatthefont
+    https://www.fontsquirrel.com/
+    https://www.whatfontis.com/
+  }
+ --Aula10--
+  var Alinhamento de textos com CSS = {
+    body{
+            text-align: left;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: right;
+        }
+        p{
+            text-align: justify;
+            text-indent: 20px;
+        }
+  }
+(*seletor*)
+ --Aula1--
+  var Usando o id com CSS = {
+     Em HTML é id = em CSS é #
+     Em HTML é class = em CSS é .
+  }
+ --Aula2--
+   var As diferenças entre id e class = {
+    id e class tem a mesma propriedade mas a diferença é que id voce so usa o nome do id em so um elemento e class voce pode usar em varias
+   } 
+ --Aula3--
+  var Pseudo-classes em CSS = {
+    height =  altura, width = largura
+    Pseudoclasse = :
+    let hover =  {
+        é uma Pseudoclasse que serve de transição
+        Ex = div:hover{
+        background-color: yellow;
+      }
+    > no css ele é usado para indicar um elemento filho
+    EX div > p {}
+    O hover junto com display: none faz voce esconder o elemento
+    EX div > p {
+        display: none;
+    }
+    div:hover > p{
+        display:block:
+    }
+    display: none;  ele anula 
+    }
+  }
+ --Aula4--
+  var Pseudo-elementos em CSS = {
+    let visited = {
+        serve para  alterar um elemento quando ele ja foi visitado
+    }
+    let active = {
+        serve para alterar um elemento quando ele esta ativado
+    }
+    let :: = {
+        isso é um PseudoElemento em HTML serve para adicionar estilos ou compórtamentos especificos elementos selecionados, sem a necessidade de adicionar classes ou ID adicinais
+        EX a:visited{
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color:yellow ;
+        }
+        a::after{
+            content: '--';
+        }
+        a::before{
+            content: '--';
+        }
+    }
+  }
+(*caixas*)
+ --Aula1--
+  var Modelo de Caixas: primeiros passos = {
+    tudo que é exibido na tela em html esta em modelo de caixa
+    e uma caixa pode ser colocada dentro de outra neste modelo e criar um hierarquia de caixa
+    todo elemento exibido na tela esta em formato de caixa
+    box = caixa (é um espaço que cerca o elemento)
+    width =  largura (largula do elemento)
+    height = altura (altura do elemento)
+    border = borda (cria uma linha em volta da caixa)
+    padding = preenchimento (espaço interno da caixa)
+    margin = margem (espaço externo da caixa) 
+    outline = contorno (um tracejado que fica para fora da borda e pode ser considarado uma ssegunda borda)
+    existem dois tipos de caixas: box-level e inline-level
+    box-level = o box level sempre se começa numa linha nova, ele sempre oculpa toda a largura da tela, e depois se for colocar alguma coisa ele pula para a linha de baixo
+    inline-level = ele cria a caixa do lado da caixa e nao pula linha depois que ele termina nao pula tambem
+    tag box-level = div (pula linha antes e depois)
+    tag inline-level = span (nao pula linha nem antes e nem depois)
+    outros exemplos de: box-level = h1 ate h6,p,main,header,nav,article,aside,footer,form,video.
+    inline-level: a,code,small,strong,em,sup ate sub,label,button,input,select.
+
+  }
+ --Aula2--
+  var Modelo de Caixas na prática (pt.1) = {
+    user agent é seu navegador e todo elemento ja vem com um padrão de css que o user agent coloca
+    no dev tools tem como voce fazer testes sem mudar o arquivo original
+    tipo de bordas: 
+    solid  =  uma linha normal
+    dashed = pontinhado quadrado
+    dotted = pontilhado redondo
+    double = linha dupla
+    groove = margem 3D
+  }
+ --Aula3--
+  var Modelo de Caixas na prática (Pt.2) = {
+    let margin = {
+        para fazer varios tamanhos ele é colocado em forma horaria tipo: margin:10px(em cima)20px(direita)30px(em baixo)40px(esquerda);
+        margin:10px(em cima e em baixo) 20px;(esquerda e direita)
+        e se todos os tamanhos forem iguais so informar uma vez só
+        margin:10px;
+        margin: auto; vai centralizar horizontalmente
+        se voce quiser centralizar horizontalmentee e continuar com alguma mediada se margem é assim: margin: 40px auto 30px auto
+    }
+    let padding = {
+        a mesma coisa da margin vale para paddingso que é dentro da caixa
+        padding:10px(em cima)20px(direita)30px(em baixo)40px(esquerda);
+        padding:10px(em cima e em baixo) 20px;(esquerda e direita) 
+        e se todos os tamanhos forem iguais so informar uma vez só
+        padding:10px;
+    }
+    let border = {
+        para se colocar uma borda é: 
+        border: tamanho estilo cor;
+        ex: border: 1px solid black;
+    }
+    let outline = {
+        ele fica entre a borda e a margem e ele agem como uma segunda borda entao se coloca igual a borda no CSS e ele esta dentro da margem 
+        para se colocar é a mesma coisa do da borda 
+        outline: 1px solid black;
+    }
+  }
+ --Aula4--
+  var Grouping Tags em HTML5 = {
+    header = cabeçalho
+    main = conteudo principal
+    footer = rodape
+    nav = menu
+    section = seção
+    article = artigo
+    aside = assunto relativo ao artigo
+  }
+ --Aula5--
+  var Sombra nas Caixas = {
+    box-shadow: deslocamento horizontal,deslocamento vertical,espalhamento e cor da sombra para deixa mais suave mexer mas barra de transparencia da cor
+  }
+ --Aula6--
+  var Caixas com vértices arredondados = {
+    border-radius: 20px;
+    ele serve para deixar a borda arredondada
+  }
+ --Aula7--
+  var Bordas decoradas = {
+    Apartir de border-image:url; voce configura uma borda com uma imagem
+  }
+(*desafio*)
+ --Anotaçoes--
+  text-decoration: none; serve para cancelar a decoraçao de um link e text-decoration: underline; para voltar
+  text-indent:20px; paragrafos com espaçamento no começo
+ --Aula1--
+  var Criando um projeto a partir do zero = {
+    Mockflow serve para para planejar o site https://wireframepro.mockflow.com/
+    Variaveis em CSS = subclasse chamada :root tudo que ser colocado vai valer para o documento inteiro e nela que se cria as variaveis, toda variavel começa com dois traços -- {
+        para se declarar uma variavel é :root{
+            --nomedavariavel : elemento
+            exemplo: 
+            :root{
+                --cor0 : #520E0E;
+                --cor1 : #D96666;
+                --cor2 : #D22423;
+                --cor3 : #522626;
+                --cor4 : #9E1B1B;
+            }
+            e para chamala é comando:var(--nomedavariavel);
+        }
+    }
+  }

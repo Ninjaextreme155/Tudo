@@ -1,0 +1,1235 @@
+program Sucessor;
+var N , SUCN : integer;
+begin
+readln(N);
+SUCN := N + 1;
+writeln(SUCN);
+end.
+
+program AREAQUADRADO;
+var AREA , L : integer;
+begin
+readln(L);
+AREA := L * L;
+writeln(AREA);
+end.
+
+program ESCREVER;
+begin
+write('ESTOU APRENDENDO A PROGRAMAR');
+end.
+
+program TRIPLONUMERO;
+var TRIPLO , N : integer;
+begin
+readln(N);
+TRIPLO := 3 * N;
+writeln(TRIPLO);
+end.
+
+program COMPRIMENTOCIRC;
+var R : integer;
+var COMPRIC : real;
+begin
+write('ESCREVA O RAIO: ');
+readln(R);
+COMPRIC := 3.14 * R * R;
+writeln('RESULTADO É: ',COMPRIC);
+end.
+
+program SALARIOLIQ;
+var SL , SB , D : integer;
+begin
+write('DIGITE SB: ');
+readln(SB);
+write('DIGITE D: ');
+readln(D);
+SL := SB - D;
+writeln('RESULTDO: ',SL);
+end.
+
+program REMUNERACAO;
+var H , Q : integer;
+var R : real;
+begin
+write('DIGITE H: ');
+readln(H);
+write('DIGITE Q: ');
+readln(Q);
+R := H * Q * 5.25;
+writeln('RESULTDO: ',R);
+end.
+
+program MEDIAARIT; 
+var N2 , N1, N3 : integer;
+var MEDIA : real;
+begin
+write('DIGITE N1 : ');
+readln(N1);
+write('DIGITE N2: ');
+readln(N2);
+write('DIGITE N3: ');
+readln(N3);
+MEDIA := (N1 + N2 + N3)/3;
+writeln('RESULTDO: ',MEDIA);
+end.
+
+program VELOCMEDIA;
+var S , T : integer;
+var VM : real;
+begin
+write('DIGITE S: ');
+readln(S);
+write('DIGITE T: ');
+readln(T);
+VM := S/T;
+writeln('RESULTDO: ',VM);
+end.
+
+program CONSUMOMEDIO;
+var D , LIT : integer;
+var CM : real;
+begin
+write('DIGITE D: ');
+readln(D);
+write('DIGITE LIT: ');
+readln(LIT);
+CM := D/LIT;
+writeln('RESULTDO: ',CM);
+end.
+
+program CONTAENER;
+var LANT , LATUA, V : integer;
+var CONTA : real;
+begin
+write('DIGITE LANT: ');
+readln(LANT);
+write('DIGITE LATUA: ');
+readln(LATUA);
+write('DIGITE V: ');
+readln(V);
+CONTA := (LATUA-LANT)*V;
+writeln('RESULTDO: ',CONTA);
+end.
+
+program NOMECOMPLETO;
+var NOME , SOBREN, NOMECOMPL : string;
+begin
+write('DIGITE NOME: ');
+readln(NOME);
+write('DIGITE SOBREN: ');
+readln(SOBREN);
+NOMECOMPL := NOME + SOBREN;
+writeln('RESULTDO: ',NOMECOMPL);
+end.
+
+program AREATRIANG;
+var B , H : integer;
+var AREA : real;
+begin
+write('DIGITE BASE: ');
+readln(B);
+write('DIGITE ALTURA: ');
+readln(H);
+AREA := (B*H)/2;
+writeln('RESULTDO: ',AREA);
+end.
+
+program LADOSTRIANG;
+var A , B , C : integer;
+var LADOS : real;
+begin
+write('DIGITE LADO A: ');
+readln(A);
+write('DIGITE LADO B: ');
+readln(B);
+write('DIGITE LADO C: ');
+readln(C);
+LADOS := (A+B+C)/2;
+writeln('RESULTDO: ',LADOS);
+end.
+
+program AREATRIANG2;
+var A , B , C , P : integer;
+var AREA : real;
+begin
+write('DIGITE P: ');
+readln(P);
+write('DIGITE LADO A: ');
+readln(A);
+write('DIGITE LADO B: ');
+readln(B);
+write('DIGITE LADO C: ');
+readln(C);
+AREA := P * (P-A)* (P-B)* (P-C);
+writeln('RESULTDO: ',AREA);
+end.
+
+program CELSIUSPARAFAHE;
+var C : integer;
+var F : real;
+begin
+write('DIGITE CELSIUS: ');
+readln(C);
+F := (9/5)*C+32;
+writeln('RESULTDO: ',F);
+end.
+
+program SOMALANCHE;
+var QCHES , QHAMB , QFRIT , QREFR , QMILK : integer;
+var TGERAL : real;
+begin
+write('DIGITE QCHES: ');
+readln(QCHES);
+write('DIGITE LADO QHAMB: ');
+readln(QHAMB);
+write('DIGITE LADO QFRIT: ');
+readln(QFRIT);
+write('DIGITE LADO QREFR: ');
+readln(QREFR);
+write('DIGITE LADO QMILK: ');
+readln(QMILK);
+TGERAL := (QHAMB* 6.5)+(QCHES*7)+(QFRIT*3)+(QREFR*1)+(QMILK*4);
+writeln('TOTAL A PAGAR: ',TGERAL);
+end.
+
+program TESTEIF1;
+var NUM : integer;
+begin
+write('um numero: ');
+readln(NUM);
+if NUM = 2 then
+writeln('NUM É IGUAL A DOIS')
+else
+writeln('NUM É DIFERENTE DE DOIS');
+end.
+
+program MAIORTECLA;
+var TECLA1 , TECLA2 : integer;
+begin
+write('DIGITE UMA TECLA: ');
+readln(TECLA1);
+write('DIGITE UMA TECLA: ');
+readln(TECLA2);
+if TECLA1>TECLA2 then
+writeln('A MAIOR TECLA É: ', TECLA1)
+else
+writeln('A MAIOR TECLA É: ', TECLA2);
+end.
+
+program ALTURAMAIOR;
+var ALTURA1 , ALTURA2 : real;
+var NOME1 , NOME2 : string;
+begin
+write('DIGITE UM NOME: ');
+readln(NOME1);
+write('DIGITE A ALTURA DO NOME: ');
+readln(ALTURA1);
+write('DIGITE UM NOME: ');
+readln(NOME2);
+write('DIGITE A ALTURA DO NOME: ');
+readln(ALTURA2);
+if ALTURA1>ALTURA2 then
+writeln('O MAIOR É: ', NOME1 , ', COM ALTURA DE: ', ALTURA1)
+else
+writeln('O MAIOR É: ', NOME2 , ', COM ALTURA DE: ', ALTURA2);
+end.
+
+program MAIORTECLAOUIGUAL;
+var TECLA1 , TECLA2 : integer;
+begin
+write('DIGITE UMA TECLA: ');
+readln(TECLA1);
+write('DIGITE UMA TECLA: ');
+readln(TECLA2);
+if TECLA1>TECLA2 then
+writeln('A MAIOR TECLA É: ', TECLA1)
+else
+writeln('A MAIOR TECLA É: ', TECLA2);
+if TECLA1=TECLA2 then 
+writeln('A TECLA: ', TECLA1, ' E IGUAL A TECLA: ', TECLA2)
+end.
+
+program MAIORINTEIRO1;
+var I : integer;
+begin
+ write('DIGITE UM NUMERO INTEIRO: ');
+ readln(I);
+  if I > 0 then
+   writeln('O NUMERO: ', I, ' EH MAIOR QUE ZERO');
+     if I > 2 then
+      writeln('O NUMERO: ', I, ' EH MAIOR QUE DOIS');
+       if I > 4 then
+        writeln('O NUMERO: ', I, ' EH MAIOR QUE QUATRO');
+end.
+
+program MAIORINTEIRO2;
+var I : integer;
+begin
+ write('DIGITE UM NUMERO INTEIRO: ');
+ readln(I);
+  if I < 2 then
+   writeln('O NUMERO: ', I, ' EH MENOR QUE DOIS')
+    else
+     if I < 4 then
+      writeln('O NUMERO: ', I, ' EH MAIOR QUE DOIS E MENOR QUE QUATRO')
+       else
+        if I < 6 then
+         writeln('O NUMERO: ', I, ' EH MAIOR QUE QUATRO E MENOR QUE SEIS')
+          else
+           writeln('O NUMERO: ', I, ' EH MAIOR QUE SEIS');
+end.
+
+program EXEPLOCASE;
+var OPCAO : integer;
+begin
+ readln(OPCAO);
+  case OPCAO of
+  0 : writeln (' OPCAO-0');
+   1 : writeln (' OPCAO-1');
+    2 : writeln (' OPCAO-2');
+     3 : writeln (' OPCAO-3')
+      else
+       writeln('NENHUM COMANDO')
+        end;
+end.
+
+program MEDIAARIT2; 
+var N2 , N1, N3, MEDIA : real;
+var NOME : string;
+begin
+ write('DIGITE NOME : ');
+  readln(NOME);
+   write('DIGITE N1 : ');
+    readln(N1);
+     write('DIGITE N2: ');
+      readln(N2);
+       write('DIGITE N3: ');
+        readln(N3);
+         MEDIA := (N1 + N2 + N3)/3;
+          if MEDIA >= 7  then 
+           writeln(NOME, MEDIA:6:2, ' APROVADO')
+            else
+             writeln(NOME, MEDIA:6:2, ' REPROVADO')
+end.
+
+program VELOCMEDIA2;
+var S , T, VM : real;
+begin
+ write('DIGITE S: ');
+  readln(S);
+   write('DIGITE T: ');
+    readln(T);
+     VM := S/T;
+      if VM > 80 then
+       writeln ('VELOCIADADE MAXIMA EXCEDIDA')
+        else
+         writeln ('VELOCIADADE MAXIMA NAO EXCEDIDA')
+end.
+
+program EQUILATERO;
+var A , B, C : integer;
+begin
+ write('DIGITE A: ');
+  readln(A);
+   write('DIGITE B: ');
+    readln(B);
+     write('DIGITE C: ');
+      readln(C);
+       if (A = B) and (A = C) then
+        writeln('TRIANGULO EQUILATERO')
+         else
+          writeln('TRIANGULO NAO EQUILATERO')
+end.
+
+program CASE5A10;
+var OPCAO : integer;
+begin
+ write('DIGITE UM NUMERO ENTRE 5 E 10: ');
+ readln(OPCAO);
+  case OPCAO of
+  5 : writeln (' O 5 EH FODA');
+   6 : writeln (' NUMERO DA IMPERFEICAO');
+    7 : writeln (' NUMERO DA PERFEICAO');
+     8 : writeln (' INFINITO EM PÉ');
+      9 : writeln ('O NUMERO IMPERFEICAO AO CONTRARIO');
+       10 : writeln (' DUPLAMENTE FODA')
+      else
+       writeln('VOCE NAO PODE DIGITAR ISSO')
+        end;
+end.
+
+program TRIANGULORETANGULO;
+var A , B, C : integer;
+begin
+ write('DIGITE A: ');
+  readln(A);
+   write('DIGITE B: ');
+    readln(B);
+     write('DIGITE C: ');
+      readln(C);
+      A:=(B*B)+(C*C);
+       if (A>B) and (A > C) and (B<>C) then
+        writeln('TRIANGULO RETANGULO',A)
+         else
+          writeln('TRIANGULO NAO RETANGULO')
+end.
+
+program MAIORTECLA2;
+var TECLA1 , TECLA2 , TECLA3 : integer;
+begin
+write('DIGITE UMA TECLA: ');
+readln(TECLA1);
+write('DIGITE UMA TECLA: ');
+readln(TECLA2);
+write('DIGITE UMA TECLA: ');
+readln(TECLA3);
+if TECLA1>TECLA2 and TECLA3 then
+writeln('A MAIOR TECLA É: ', TECLA1)
+else
+if TECLA1 and TECLA2 <TECLA3 then
+writeln('A MAIOR TECLA É: ', TECLA3)
+else
+if TECLA2>TECLA3 and TECLA1 then
+writeln('A MAIOR TECLA É: ', TECLA2)
+end.
+
+program  SALARIOINSS;
+var SALARIO : real;
+begin
+ write('DIGITE SEU SALARIO: ');
+ readln(SALARIO);
+ if SALARIO<420 then 
+  writeln('DESCONTO DE OITO PORCENTO NO INSS')
+  else
+ if SALARIO<1350 then 
+  writeln('DESCONTO DE NOVE PORCENTO NO INSS')
+  else
+ if SALARIO>1350 then 
+  writeln('DESCONTO DE DEZ PORCENTO NO INSS');
+end.
+
+program REPETECOMPARA ;
+var MATRICULA , IDADE, I : integer;
+begin
+for I := 1 to 5 do
+readln(MATRICULA, IDADE);
+end.
+
+program REPETECOMFOR ;
+var IDADE, I : integer;
+NOME : string;
+begin
+for I := 1 to 5 do
+begin
+ write('PESSOA DE ORDEM: ', I, ' ');
+ readln (NOME);
+ write('IDADE: ', I, ' ');
+ readln (IDADE)
+ end
+end.
+
+program 1A10 ;
+var SOMA , I : integer;
+begin
+for I := 1 to 10 do
+ writeln(I);
+end.
+
+program SOMA1A10 ;
+var SOMA, I : integer;
+begin
+SOMA := 0;
+for I := 1 to 10 do
+begin
+ SOMA:=SOMA+I;
+ writeln('VALOR DE I: ',I,'VALOR DA SOMA: ',SOMA);
+ end;
+ writeln('A SOMA VALE:',SOMA,'O VALOR FINAL DE I: ',I);
+ end.
+
+program SOMA1A10N2 ;
+var SOMA, I : integer;
+begin
+SOMA := 0;
+for I := 10 downto 1 do
+begin
+ SOMA:=SOMA+I;
+ writeln('VALOR DE I: ',I,'VALOR DA SOMA: ',SOMA);
+ end;
+ writeln('A SOMA VALE:',SOMA,' O VALOR FINAL DE I: ',I);
+ end.
+
+program FATORIAL;
+var TERMO, NUM, FAT : integer;
+begin
+FAT := 1;
+write('DIGITE UM NUMERO: ');
+readln(NUM);
+for TERMO:= NUM downto 1 do 
+ FAT:=FAT * TERMO;
+writeln(FAT)
+ end.
+
+program SOMAQUDR1A10;
+var I , NUM, FAT : integer;
+begin
+FAT := 0;
+for I:= 10 downto 1 do 
+ FAT:=FAT+(I*I);
+writeln(FAT)
+ end.
+
+program ALOa;
+var I, O : integer;
+begin
+write('DIGITE UM NUMERO: ');
+readln(O);
+if O>0 then
+for I:=1 to O do 
+ writeln('ALO')
+ else
+ writeln('negativo')
+ end.
+
+program SOMATRIPLO1A20;
+var I , NUM, FAT : integer;
+begin
+FAT := 0;
+for I:= 20 downto 1 do 
+ FAT:=FAT+(I*3);
+writeln(FAT)
+ end.
+
+program TABUADA ;
+var SOMA, I, O : integer;
+begin
+write('DIGITE UM NUMERO: ');
+readln(O);
+for I := 1 to 10 do
+begin
+ SOMA:=O*I;
+ writeln(I,' x ',O,' = ',SOMA);
+ end;
+ end.
+
+program SEQUENCIA2X2 ;
+var SOMA, I : integer;
+begin
+SOMA:=1;
+for I := 0 to 10 do
+begin
+ SOMA:=SOMA*2+2;
+ writeln(I,' x ',SOMA,' = ',SOMA);
+ end;
+ end.
+
+program SOMAX-1/2 ;
+var SOMA : real;
+var I : integer;
+begin
+SOMA:=1;
+for I := 1 to 11 do
+begin
+ SOMA:=SOMA*(-1/2);
+ writeln(SOMA);
+ end;
+ for I := 1 to 11 do
+ begin
+ SOMA:=SOMA;
+ writeln ('isso: ',SOMA);
+ end;
+ end.
+
+program MEDIAARIT3;
+uses crt;
+var N1,N2,MEDIA, MEDIAG : real;
+var I, ALUNOS : integer;
+var NOME : string;
+begin
+MEDIAG := 0;
+clrscr;
+for I := 1 to 2 do
+begin
+write('DIGITE NOME : ');
+  readln(NOME);
+   write('DIGITE N1 : ');
+    readln(N1);
+     write('DIGITE N2: ');
+      readln(N2);
+         MEDIA := (N1 + N2)/2;
+         MEDIAG := MEDIAG+MEDIA;
+          if MEDIA >= 7  then 
+           writeln(NOME, MEDIA:6:2, ' APROVADO')
+            else
+             writeln(NOME, MEDIA:6:2, ' REPROVADO');
+end;
+ MEDIAG:=MEDIAG/I;
+ writeln('MEDIA GERAL: ',MEDIAG:6:2);
+ end.
+
+Program Calcular_Media_da_Turma;
+var   MD: ARRAY[1..8] OF REAL;
+      SOMA, MEDIA: REAL;
+      I: INTEGER;
+Begin
+      SOMA:=0;
+			Writeln ('Cálculo de média escolar: ');
+			writeln;
+			For I:= 1 to 8 do
+			begin 
+			   write('Informe a ', I,'a. nota: ');
+				 readln(MD[I]);
+				 soma:=soma+MD[I];
+			end;
+			media:=soma/8;
+			writeln;
+			writeln(' A média do grupo equivale a: ', Media:2:2);
+			writeln;
+			writeln ('Tecle <ENTER> para encerrar: ');
+End.
+
+program WHILEEXEMP;
+var I : integer;
+begin
+I := 1;
+while I < 11 do
+begin
+writeln(I);
+I:= I + 1
+end;
+end.
+
+program DIGITEA;
+var LETRA : char; {TIPO CHARACTER - APENAS UM CHARACTER}
+begin
+writeln('DIGITE A LETRA <A>');
+read(LETRA);
+while LETRA <> 'A' do
+begin
+write('DIGITE A LETRA <A>');
+readln(LETRA)
+end;
+writeln('MUITO BEM ! VOCE DIGITOU A LETRA <A>')
+end.
+
+program MENU;
+var OP : integer; 
+begin
+OP:= 9;
+while OP<> 6 do
+begin
+writeln('-MENU DE OPCOES-');
+writeln('  ');
+writeln('    1 - INCLUSAO');
+writeln('    2 - CONSULTA');
+writeln('    3 - LISTAGEM');
+writeln('    6 - SAIDA     ');
+writeln('  ');
+write('DIGITE SUA OPCAO: ');
+readln(OP);
+if OP = 1 then
+ writeln('INCLUSAO')
+ else
+ if OP = 2 then
+ writeln('CONSULTA')
+ else
+if OP = 3 then
+ writeln('LISTAGEM')
+end;
+end.
+
+program MDC;
+var NUM1,NUM2,RESTODIV : integer;
+begin
+ write('NUMERO MAIOR: ');
+ readln(NUM1);
+ write('NUMERO MENOR: ');
+ readln(NUM2);
+ RESTODIV := NUM1 MOD NUM2; {MOD RETORNA O RESTO DA DIVISAO}
+ while RESTODIV <> 0 do
+  begin
+   NUM1 := NUM2;
+   NUM2 := RESTODIV;
+   RESTODIV := NUM1 MOD NUM2
+  end;
+ writeln('O MDC EH:  ',NUM2)
+end.
+
+program NUMEROINVERTIDO;
+var NUM, NUMINV : integer;
+begin
+ write('DIGITE UM NUMERO: ');
+ read(NUM);
+ NUMINV:= 0;
+ while (NUM <> 0) do
+ begin
+  NUMINV := NUMINV * 10 + NUM mod 10;
+  NUM := NUM div 10;
+ end;
+ writeln('O NUMERO: ', NUM ,' INVERTIDO VALE: ',NUMINV);
+end.
+
+program DIFERENCAPRIMOS;
+var I, J, NUM, P1, P2 : integer;
+EPRIMO :boolean; {VARIAVEL LOGICA PODE RECEBER TRUE (V) OU FALSE (F)}
+begin
+ NUM:=0;
+ I:=1;
+ while NUM<12 do
+ begin
+  I:=I + 1;
+  EPRIMO := true;
+  for J:=2 to I-1 do
+   if (I mod J) = 0 then
+    EPRIMO := false;
+   if EPRIMO then
+   begin
+    NUM:=NUM+1;
+    if NUM = 6 then
+     P1:=I 
+    else
+     if NUM = 12 then
+      P2:=I;
+      end
+     end;
+     writeln('O 6 PRIMO: ',P1, ' O 12 PRIMO: ',P2, ' P12 - P6: ',P2-P1)
+     end.
+
+program EXEMPREPEAT;
+VAR I : integer;
+begin
+I := 0;
+repeat
+I := I + 1;
+writeln(I)
+until i = 10
+end.
+
+program DIGITEA;
+VAR LETRA : char;
+begin
+ repeat
+  write('DIGITE A LETRA <A>: ');
+  readln(LETRA)
+ until LETRA ='A';
+ writeln('MUITO BEM ! VOCE DIGITOU A LETRA <A>')
+end.
+
+program MENU;
+var OP : integer; 
+begin
+repeat
+writeln('-MENU DE OPCOES-');
+writeln('  ');
+writeln('    1 - INCLUSAO');
+writeln('    2 - CONSULTA');
+writeln('    3 - LISTAGEM');
+writeln('    6 - SAIDA     ');
+writeln('  ');
+write('DIGITE SUA OPCAO: ');
+readln(OP);
+if OP = 1 then
+ writeln('INCLUSAO')
+ else
+ if OP = 2 then
+ writeln('CONSULTA')
+ else
+if OP = 3 then
+ writeln('LISTAGEM')
+until OP = 6
+end.
+
+program MDC;
+var NUM1,NUM2,RESTODIV : integer;
+begin
+ write('NUMERO MAIOR: ');
+ readln(NUM1);
+ write('NUMERO MENOR: ');
+ readln(NUM2);
+ RESTODIV := NUM1 MOD NUM2; {MOD RETORNA O RESTO DA DIVISAO}
+ repeat
+   NUM1 := NUM2;
+   NUM2 := RESTODIV;
+   RESTODIV := NUM1 MOD NUM2;
+   until RESTODIV <> 0;
+ writeln('O MDC EH:  ',NUM2)
+end.
+
+program NUMMAGIC;
+var NUM : integer;
+begin
+writeln('ESCREVA UM NUMERO: ');
+read(NUM);
+while NUM <> 19 do
+begin
+write('ESCREVA UM NUMERO: ');
+read(NUM);
+end;
+writeln('VC ACERTOU')
+end.
+
+program BOTAFOGO;
+var I : integer;
+var SALARIO : real;
+var NOME : string;
+begin
+for I:=1 to 33 do
+begin 
+write('DIGITE O SALARIO: ');
+readln(SALARIO);
+write('DIGITE O NOME  DO JOGADOR: ');
+readln(NOME);
+if SALARIO < 90000 then
+SALARIO:=SALARIO+20*(SALARIO/100)
+else
+if SALARIO>90001 then
+SALARIO:=SALARIO+10*(SALARIO/100)
+else
+if SALARIO>130001 then
+SALARIO:=SALARIO+5*(SALARIO/100)
+else
+if SALARIO>180000 then
+SALARIO:=SALARIO;
+writeln('NOME DO JOGADOR ',NOME,' SALARIO',SALARIO)
+end;
+end.
+
+program VOLTAGEM;
+var V,R,I : real;
+var Q : integer;
+begin
+repeat
+writeln('-OQUE VOCE DESEJA CALCULAR: ');
+writeln('  ');
+writeln('    1 - TENSAO ELETRICA');
+writeln('    2 - CORRENTE ELETRICA');
+writeln('    3 - SAIDA     ');
+writeln('  ');
+write('DIGITE A OPCAO: ');
+readln(Q);
+if Q = 1 then
+begin
+write('ESCREVA A CORRENTE ELETRICA: ');
+readln(I);
+write('ESCREVA A RESISTENCIA ELETRICA: ');
+readln(R);
+V:=R*I;
+writeln('TENSAO ELETRICA = ',V:6:2);
+end;
+if Q = 2 then
+begin
+write('ESCREVA A TENSAO ELETRICA: ');
+readln(V);
+write('ESCREVA A RESISTENCIA ELETRICA: ');
+readln(R);
+I:=V/R;
+writeln('CORRENTE ELETRICA = ',I:6:2);
+end;
+until Q = 3
+end.
+
+program EXEMP;
+var TAM, I : integer;
+V : array [1..10] of integer;
+begin
+ TAM := 10;
+ for I := 1 to TAM do
+  begin
+   write('DIGITE UM NUMERO: ');
+   readln(V[I])
+  end;
+ for I := 1 to TAM do
+  begin
+   writeln ('COMPONENTE DE ORDEM ',I,' = ',V[I])
+  end;
+end.
+
+program EXEMP2;
+var TAM, I : integer;
+V : array [1..10] of integer;
+begin
+ TAM := 10;
+ for I := 1 to TAM do
+  begin
+   write('DIGITE UM NUMERO: ');
+   readln(V[I])
+  end;
+ for I := TAM downto 1 do
+  begin
+   writeln ('COMPONENTE DE ORDEM ',I,' = ',V[I])
+  end;
+end.
+
+program EXEMP3;
+var I, MIN, MAX : integer;
+VET : array [1..20] of integer;
+const MAIOR = -32768;
+MENOR = +32767;
+begin
+ MIN := MAIOR;
+ MAX := MENOR;
+ for I := 1 to 20 do
+ begin
+  write('NUMERO: ');
+  readln (VET[I]);
+ end;
+ for I := 1 to 20 do
+ begin
+ if VET [I] < MIN then
+  begin
+   MIN:=VET[I];
+  end;
+  if VET[I] > MAX then
+  begin
+   MAX:=VET[I]
+  end;
+ end;
+ writeln('O MENOR: ',MIN,'O MAIOR: ',MAX)
+end.
+
+program MATRIZ3X3;
+const LIN = 3; COL = 3;
+var I, J : integer;
+MAT : array [1..3,1..3] of integer;
+begin
+ for I := 1 to LIN do
+ begin
+ for J := 1 to COL do
+  begin
+  write('DIGITE O COMPONENTE: ');
+  readln (MAT[I,J]);
+  end;
+ end;
+ for I := 1 to LIN do
+ begin
+ for J := 1 to COL do
+  begin
+   write(MAT[I,J],'  ')
+ end;
+ writeln
+ end;
+end.
+
+program MATRIZIxJ;
+var I, J, LIN, COL : integer;
+MAT : array [1..100,1..100] of integer;
+begin
+ write('DIGITE DE QUANTIDADE LINHAS: ');
+ readln(LIN);
+ write('DIGITE DE QUANTIDADE COLUNAS: ');
+ readln(COL);
+ for I := 1 to LIN do
+ begin
+ for J := 1 to COL do
+  begin
+  write('DIGITE O COMPONENTE: ');
+  readln (MAT[I,J]);
+  end;
+ end;
+ for I := 1 to LIN do
+ begin
+ for J := 1 to COL do
+  begin
+   write(MAT[I,J],'  ')
+ end;
+ writeln
+ end;
+end.
+
+program MATRIZSOMA4X2;
+uses crt;
+const LIN = 4; COL = 2;
+var I, J, SOMA : integer;
+MAT : array [1..LIN,1..COL] of integer;
+begin
+clrscr;
+ SOMA:= 0;
+ for I := 1 to LIN do
+ begin
+ for J := 1 to COL do
+  begin
+  write('DIGITE O COMPONENTE: ');
+  readln (MAT[I,J]);
+  SOMA:=SOMA + MAT[I,J]
+  end;
+ end;
+ writeln('A SOMA DOS COMPONENTES VALE: ', SOMA);
+end.
+
+program VETORCONCATENA;
+const LIN= 3;
+var I : integer;
+A, B, C : array [1..LIN] of integer;
+begin
+ for I := 1 to LIN do
+  begin
+  write('DIGITE O COMPONENTE A: ');
+  readln (A[I]);
+  write('DIGITE O COMPONENTE B: ');
+  readln (B[I]);
+ end;
+ for I := 1 to LIN do
+  begin
+ write(A[I],'  ',B[I],'  ')
+ end;
+ writeln
+end.
+
+program VETORSOMA;
+const LIN= 3;
+var I : integer;
+A, B, C : array [1..LIN] of integer;
+begin
+ for I := 1 to LIN do
+  begin
+  write('DIGITE O COMPONENTE A: ');
+  readln (A[I]);
+  write('DIGITE O COMPONENTE B: ');
+  readln (B[I]);
+  C[I]:=A[I]+B[I];
+ end;
+ for I := 1 to LIN do
+  begin
+   write(C[I],'  ')
+ end;
+ writeln
+end.
+
+program MEDIAARIT4;
+uses crt;
+var I, LIN : integer;
+MEDIAG : real;
+A, B, C : array [1..100] of real;
+begin
+clrscr;
+ MEDIAG:=0;
+ write('DIGITE DE QUANTIDADE ALUNOS: ');
+ readln(LIN);
+ clrscr;
+ for I := 1 to LIN do
+  begin
+  write('DIGITE A NOTA 1: ');
+  readln (A[I]);
+  write('DIGITE A NOTA 2: ');
+  readln (B[I]);
+  C[I]:=(A[I]+B[I])/2;
+  MEDIAG:=MEDIAG+C[I];
+  if C[I] >= 7  then 
+           writeln(C[I]:6:2, ' APROVADO')
+            else
+             writeln(C[I]:6:2, ' REPROVADO');
+ end;
+ clrscr;
+ for I := 1 to LIN do
+  begin
+   write(C[I]:6:2,'  ')
+ end;
+ writeln;
+ MEDIAG:=MEDIAG/I;
+ writeln('  ');
+ writeln('MEDIA GERAL: ',MEDIAG:6:2);
+end.
+
+program EXEMPLOSUB1;
+var MATRICULA : array [1..5] of integer;
+DIGITO, I : integer;
+
+ procedure CALCULADIGITO;
+ var I : integer;
+ SOMA : integer;
+ begin
+ SOMA := 0;
+ for I:=1 to 5 do
+  begin
+   SOMA:=SOMA + MATRICULA [I] * (I+1)
+  end;
+ DIGITO:=SOMA mod 11;
+ if DIGITO > 9 then
+    DIGITO:=0;
+ end;
+ 
+ begin 
+ for I:=1 to 5 do
+ begin
+ write('DIGITE O NUMERO DA MATRICULA: ');
+  readln(MATRICULA[I]);
+ CALCULADIGITO;
+ end;
+ writeln('O DIGITO VALE: ',DIGITO)
+ end.
+
+program EXEMPLOFUNCAO;
+var MATRICULA : array [1..5] of integer;
+I : integer;
+function CALCULADIGITO : integer;
+var I : integer;
+SOMA : integer;
+begin
+SOMA := 0;
+for I:=1 to 5 do
+ SOMA:=SOMA + MATRICULA[I] * (I+1);
+if (SOMA mod 11) > 9 then
+CALCULADIGITO:=0
+else
+CALCULADIGITO := (SOMA mod 11)
+end;
+begin
+for I:=1 to 5 do
+begin
+write('DIGITE O NUMERO DA MATRICULA: ');
+readln(MATRICULA [I]);
+end;
+writeln ('O DIGITO VALE: ',CALCULADIGITO)
+end.
+
+program EXEMPLOCAP801;
+var I, N , K: integer;
+VET : array [1..10] of integer;
+procedure LER;
+var N : integer;
+begin
+N := 11;
+while N > 10 do 
+ begin
+  write('QUANTOS NUMEROS ');
+  readln(N)
+ end;
+for I:= 1 to N do
+begin 
+ write('ENTRE COM NUMEROS DESEJADOS');
+ readln(VET[I])
+ end
+end;
+
+procedure CLASSIFICAR;
+var CLASSI,N1,AUX: integer;
+begin
+ N1:=N-1;
+ CLASSI:=0;
+ while CLASSI = 0 do
+  begin
+  CLASSI:=1;
+  for I:=1 to N1 do
+  begin
+  CLASSI:=1;
+  if VET[I] > VET[I+1] then
+   begin
+    AUX:=VET[I];
+    VET[I]:=VET[I+1];
+    VET[I+1]:=AUX;
+    CLASSI:=0;
+    K:=I;
+   end
+  end;
+ N1:=K 
+end;
+end;
+
+procedure EXIBIR;
+begin
+for I:=1 to N do
+writeln(VET[I])
+end;
+
+begin
+LER;
+CLASSIFICAR;
+EXIBIR;
+end.
+
+program EXVALOR;
+var CARAC : char;
+
+procedure EXIBECHAR (LETRA:char);
+begin
+ writeln(LETRA);
+ LETRA:= 'Z'
+ end;
+ 
+begin
+ CARAC:='A';
+ EXIBECHAR(CARAC);
+ write(CARAC);
+ EXIBECHAR('B');
+ writeln(CARAC);
+end.
+
+program EXREFERENCIA;
+var CARAC:char;
+
+ procedure EXIBECHAR (var FORMAL : char);
+ 
+  begin
+   FORMAL := 'Z';
+   writeln (FORMAL)
+  end;
+  
+  begin
+   CARAC:='*';
+   EXIBECHAR (CARAC);
+   writeln(CARAC)
+  end.
+
+program R802;
+var NUM:integer;
+
+ procedure ROT1 (N : integer);
+  begin
+   N := 4;
+  end;
+  
+  begin
+   NUM:= 5;
+   writeln('VALOR DE NUM ANTES: ',NUM);
+   ROT1(NUM);
+   writeln('VALOR DE NUM APOS: ',NUM);
+  end.
+
+program R802 CORRIGIDO;
+var NUM:integer;
+
+ procedure ROT1 (var N : integer);
+  begin
+   N := 4;
+  end;
+  
+  begin
+   NUM:= 5;
+   writeln('VALOR DE NUM ANTES: ',NUM);
+   ROT1(NUM);
+   writeln('VALOR DE NUM APOS: ',NUM);
+  end.
+
+program FIBONACCI;
+var ORDEM:integer;
+
+ function FIB (ORDEM : integer):integer;
+ var NUM1, NUM2, NUM3, IND:integer;
+ begin
+  if ORDEM = 0 then
+   FIB := 0 
+  else
+   if ORDEM = 1 then
+    FIB:=1 
+   else
+    begin
+     NUM1:=0;
+     NUM2:=1;
+     for IND:=3 to ORDEM do 
+      begin
+       NUM3 := NUM1 + NUM2;
+       NUM1 := NUM2;
+       NUM2 := NUM3
+      end;
+     FIB:=NUM3
+    end
+   end;
+   
+   begin
+    writeln('GERACAO DO ENESIMO TERMO FIBONACCI');
+    write('DIGITE A ORDEM DO TERMO: ');
+    readln(ORDEM);
+    writeln('O ',ORDEM, ' O. TERMO: ',FIB(ORDEM));
+    readln
+   end.

@@ -1,0 +1,116 @@
+> var matrix = [[1,2,3],[4,5,6],[7,8,9]]
+undefined
+> Object.matrix
+undefined
+> var sparseArray = [1,,,,5]
+undefined
+> var p = {x:2.3,y:-1.2}
+undefined
+> var q = {}
+undefined
+> q.x = 2.3
+2.3
+> q.y = -1.2
+-1.2
+> var tectangle = {upperLeft:{x:2,y:2},lowerRight:{x:4,y:5}}
+undefined
+> var side = 1
+undefined
+> var square = {"upperLeft":{x:p.x,y:p.y},'lowerRight:{x:p.x+side,y:p.y+side}}
+var square = {"upperLeft":{x:p.x,y:p.y},'lowerRight:{x:p.x+side,y:p.y+side}}
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> var tectangle = {upperLeft:{x:2+side,y:2},lowerRight:{x:4,y:5}}
+undefined
+> var square = function(x){return x*x}
+undefined
+> square = 2
+2
+> var square = function(x){return x*x}
+undefined
+> x = 2
+2
+> square
+[Function: square]
+> var square = function(x){return x*x} x=2
+var square = function(x){return x*x} x=2
+                                     ^
+
+Uncaught SyntaxError: Unexpected identifier
+> var square = function(x){return x*x}; x=2
+2
+> var square = function(2){return x*x};
+var square = function(2){return x*x};
+                      ^
+
+Uncaught SyntaxError: Unexpected number
+> tectangle[upperLeft]
+Uncaught ReferenceError: upperLeft is not defined
+> matrix[1]
+[ 4, 5, 6 ]
+> matrix[0]
+[ 1, 2, 3 ]
+> var o = {x:1,y:{z:3}}
+undefined
+> var a = [0,4,[5,6]]
+undefined
+> o.x
+1
+> o.y.z
+3
+> o["x"]
+1
+> a[1]
+4
+> a[2]["1"]
+6
+> a[0].x
+undefined
+> square(2)
+4
+> f(0)
+Uncaught ReferenceError: f is not defined
+> Math.max(x,y,z)
+Uncaught ReferenceError: y is not defined
+> var y = 5
+undefined
+> Math.max(x,y,z)
+Uncaught ReferenceError: z is not defined
+> var z = 7
+undefined
+> Math.max(x,y,z)
+7
+> a.sort()
+[ 0, 4, [ 5, 6 ] ]
+> new Object()
+{}
+> new Point(2,3)
+Uncaught ReferenceError: Point is not defined
+> new Object
+{}
+> new Date
+2023-10-19T17:17:04.920Z
+> w= x+y*z
+37
+> w=(x+y)*z
+49
+> typeof my.function[x](y)
+Uncaught ReferenceError: my is not defined
+> my = {x:1,y:2}
+{ x: 1, y: 2 }
+> w=x-y-z
+-10
+> w=((x-y)-z)
+-10
+> x=~-y
+4
+> w=x=y=z
+7
+> q=a?b:c?d:e?f:g
+Uncaught ReferenceError: b is not defined
+> var b = 9
+undefined
+> q=a?b:c?d:e?f:g
+9
+>

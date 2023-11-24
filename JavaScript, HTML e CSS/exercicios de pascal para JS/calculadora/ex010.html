@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+ <h1>Calculadora </h1>
+    </header>
+    <section>
+<div id="res" class="cal2">
+<br><input type="text" id="caixa">
+</div>
+<div id="cal" class="cal2">
+    <br><input type="button" class="button" value="7" onclick="adicionarnumero(7)">
+    <input type="button" value="8" class="button" onclick="adicionarnumero(8)">
+    <input type="button" value="9" class="button" onclick="adicionarnumero(9)">
+    <input type="button" value="DEL" id="delete" onclick="limpar()">
+    <input type="button" value=" x&sup3; " class="operador" onclick="adicionaroperador('³')">
+    <br><input type="button" value="4" class="button" onclick="adicionarnumero(4)">
+    <input type="button" value="5" class="button" onclick="adicionarnumero(5)">
+    <input type="button" value="6" class="button" onclick="adicionarnumero(6)">
+    <input type="button" value="  x  " class="operador" onclick="adicionaroperador('x')">
+    <input type="button" value=" &divide " class="operador" onclick="adicionaroperador('÷')">
+    <br><input type="button" value="1" class="button" onclick="adicionarnumero(1)">
+    <input type="button" value="2" class="button" onclick="adicionarnumero(2)">
+    <input type="button" value="3" class="button" onclick="adicionarnumero(3)">
+    <input type="button" value="  +  " class="operador" onclick="adicionaroperador('+')">
+    <input type="button" value=" - " class="operador" onclick="adicionaroperador('-')">
+    <br><input type="button" value="0" class="button" onclick="adicionarnumero(0)">
+    <input type="button" value="&radic;" class="operador" onclick="adicionaroperador('√')">
+    <input type="button" value="x&sup2;" class="operador" onclick="adicionaroperador('²')">
+    <input type="button" value="   .   " class="operador" onclick="adicionarnumero('.')">
+    <input type="button" value=" = " class="resultado" onclick="resultado()">
+</div>
+    </section>
+    <footer>
+<p>&copy; NinjaExtreme</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

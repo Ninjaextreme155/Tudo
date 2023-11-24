@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martins Informática</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="martins-logo-removebg-preview.png">
+</head>
+<body>
+    <div id="all">
+        <div id="logo">
+            <img src="martins-logo.png" alt="" class="image">
+            <h1>Martins</h1>
+            <h3>Celulares e Acessórios</h3>
+        </div>
+
+        <div id="opcoes">
+            <div class="opcoes-container">
+                <button class="btn-opcoes" onmouseenter="toggleOpcoes('opcoes-celulares')">Celulares</button>
+                <div class="opcoes" id="opcoes-celulares">
+                    <button class="btn-opcoes2">Motorola</button><br>
+                    <button class="btn-opcoes2">Samsung</button><br>
+                    <button class="btn-opcoes2">Redmi</button><br>
+                    <button class="btn-opcoes2">Apple</button>
+                </div>
+            </div>
+
+            <div class="opcoes-container">
+                <button class="btn-opcoes" onmouseenter="toggleOpcoes('opcoes-acessorios')">Acessórios</button>
+                <div class="opcoes" id="opcoes-acessorios">
+                    <button class="btn-opcoes2">Capinhas</button><br>
+                    <button class="btn-opcoes2">Peliculas</button><br>
+                    <button class="btn-opcoes2">Sons e Headsets</button>
+                </div>
+            </div>
+
+            <div class="opcoes-container">
+                <button class="btn-opcoes" onmouseenter="toggleOpcoes('opcoes-redes')">Redes</button>
+                <div class="opcoes" id="opcoes-redes">
+                    <button class="btn-opcoes2">Instagram</button><br>
+                    <button class="btn-opcoes2">Facebook</button><br>
+                    <button class="btn-opcoes2">Whatsapp</button>
+                </div>
+            </div>
+
+            <div class="opcoes-container">
+                <button class="btn-opcoes" onmouseenter="toggleOpcoes('opcoes-assistencia')">Assistência</button>
+                <div class="opcoes" id="opcoes-assistencia">
+                    <button class="btn-opcoes2">Telas e Traseiras</button><br>
+                    <button class="btn-opcoes2">Displays e Conectores</button><br>
+                    <button class="btn-opcoes2">Outros</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="cont">
+            <p><button class="btn-opcoes" onclick="sobre()">Sobre Nós</button></p>
+            <p id="news">news</p>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>

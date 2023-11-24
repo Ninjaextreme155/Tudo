@@ -1,0 +1,191 @@
+Microsoft Windows [versão 10.0.22621.2283]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Christian>mysql
+ERROR 1045 (28000): Access denied for user 'ODBC'@'localhost' (using password: NO)
+
+C:\Users\Christian>mysql -h localhost -u root -p
+Enter password: ********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 15
+Server version: 8.1.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases
+    -> SHOW DATABASES
+    -> SHOW DATABASES;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SHOW DATABASES
+SHOW DATABASES' at line 2
+mysql> CREATE DATABASE Sistemadecadastro;
+Query OK, 1 row affected (0.07 sec)
+
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sistemadecadastro  |
+| sys                |
+| world              |
++--------------------+
+7 rows in set (0.03 sec)
+
+mysql> USE sistemadecadastro
+Database changed
+mysql> SHOW TABLES;
+Empty set (0.02 sec)
+
+mysql> CREATE TABLE usuarios(
+    ->     nome VARCHAR(50),
+    ->     email  VARCHAR(100),
+    ->     idade INT
+    -> );
+Query OK, 0 rows affected (0.37 sec)
+
+mysql> SHOW TABLES;
++-----------------------------+
+| Tables_in_sistemadecadastro |
++-----------------------------+
+| usuarios                    |
++-----------------------------+
+1 row in set (0.02 sec)
+
+mysql> DESCRIBE usuarios;
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| nome  | varchar(50)  | YES  |     | NULL    |       |
+| email | varchar(100) | YES  |     | NULL    |       |
+| idade | int          | YES  |     | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+3 rows in set (0.04 sec)
+
+mysql> INSERT INTO usuarios(nome,email,idade) VALUES (
+    ->     "Christian",
+    ->     "christianfelipe.306@gmail.com",
+    ->     20
+    -> );
+Query OK, 1 row affected (0.07 sec)
+
+mysql> SHOW TABLES;
++-----------------------------+
+| Tables_in_sistemadecadastro |
++-----------------------------+
+| usuarios                    |
++-----------------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM usuarios;
++-----------+-------------------------------+-------+
+| nome      | email                         | idade |
++-----------+-------------------------------+-------+
+| Christian | christianfelipe.306@gmail.com |    20 |
++-----------+-------------------------------+-------+
+1 row in set (0.00 sec)
+
+mysql> INSERT INTO usuarios(nome,email,idade) VALUES (
+    ->     "Joao",
+    ->     "joao.123.com",
+    ->     78
+    -> );
+Query OK, 1 row affected (0.06 sec)
+
+mysql> INSERT INTO usuarios(nome,email,idade) VALUES (
+    ->     "maria",
+    ->     "mariafaniqueta.134.com",
+    ->     43
+    -> );
+Query OK, 1 row affected (0.12 sec)
+
+mysql> SELECT * FROM usuarios;
++-----------+-------------------------------+-------+
+| nome      | email                         | idade |
++-----------+-------------------------------+-------+
+| Christian | christianfelipe.306@gmail.com |    20 |
+| Joao      | joao.123.com                  |    78 |
+| maria     | mariafaniqueta.134.com        |    43 |
++-----------+-------------------------------+-------+
+3 rows in set (0.00 sec)
+
+mysql> INSERT INTO usuarios(nome,email,idade) VALUES (
+    ->     "Luffy",
+    ->     "KingthePirates.com",
+    ->     19
+    -> );
+Query OK, 1 row affected (0.05 sec)
+
+mysql> SELECT * FROM usuarios;
++-----------+-------------------------------+-------+
+| nome      | email                         | idade |
++-----------+-------------------------------+-------+
+| Christian | christianfelipe.306@gmail.com |    20 |
+| Joao      | joao.123.com                  |    78 |
+| maria     | mariafaniqueta.134.com        |    43 |
+| Luffy     | KingthePirates.com            |    19 |
++-----------+-------------------------------+-------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT * FROM usuarios WHERE idade = 20;
++-----------+-------------------------------+-------+
+| nome      | email                         | idade |
++-----------+-------------------------------+-------+
+| Christian | christianfelipe.306@gmail.com |    20 |
++-----------+-------------------------------+-------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM usuarios WHERE nome = "Luffy";
++-------+--------------------+-------+
+| nome  | email              | idade |
++-------+--------------------+-------+
+| Luffy | KingthePirates.com |    19 |
++-------+--------------------+-------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM usuarios WHERE idade >= 20;
++-----------+-------------------------------+-------+
+| nome      | email                         | idade |
++-----------+-------------------------------+-------+
+| Christian | christianfelipe.306@gmail.com |    20 |
+| Joao      | joao.123.com                  |    78 |
+| maria     | mariafaniqueta.134.com        |    43 |
++-----------+-------------------------------+-------+
+3 rows in set (0.00 sec)
+
+mysql> DELETE FROM usuarios WHERE nome = "maria";
+Query OK, 1 row affected (0.05 sec)
+
+mysql> SELECT * FROM usuarios;
++-----------+-------------------------------+-------+
+| nome      | email                         | idade |
++-----------+-------------------------------+-------+
+| Christian | christianfelipe.306@gmail.com |    20 |
+| Joao      | joao.123.com                  |    78 |
+| Luffy     | KingthePirates.com            |    19 |
++-----------+-------------------------------+-------+
+3 rows in set (0.00 sec)
+
+mysql> UPDATE usuarios SET nome = "Nome de teste" WHERE nome = "Joao";
+Query OK, 1 row affected (0.19 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM usuarios;
++---------------+-------------------------------+-------+
+| nome          | email                         | idade |
++---------------+-------------------------------+-------+
+| Christian     | christianfelipe.306@gmail.com |    20 |
+| Nome de teste | joao.123.com                  |    78 |
+| Luffy         | KingthePirates.com            |    19 |
++---------------+-------------------------------+-------+
+3 rows in set (0.00 sec)
+
+mysql>

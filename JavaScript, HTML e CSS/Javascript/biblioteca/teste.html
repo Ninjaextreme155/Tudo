@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros</title>
+</head>
+<body>
+    <h1>Cadastro de Livros</h1>
+
+    <input type="text" id="titulo" placeholder="Título do Livro">
+    <input type="text" id="autor" placeholder="Autor do Livro">
+    <button id="cadastrar">Cadastrar Livro</button>
+
+    <h2>Livros Cadastrados</h2>
+    <ul id="lista-livros"></ul>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dbNome = "BancoLivros";
+        const request = indexedDB.open(dbNome, 1);
+    
+        request.onupgradeneeded = function (e) {
+            const db = e.target.result;
+            if (!db.objectStoreNames.contains("livros")) {
+                const objectStore = db.createObjectStore("livros", { keyPath: "id", autoIncrement: true });
+                objectStore.createIndex("titulo", "titulo", { unique: false });
+                objectStore.createIndex("autor", "autor", { unique: false });
+            }
+        };
+    
+        request.onsuccess = function (e) {
+            const db = e.target.result;
+    
+            document.getElementById("cadastrar").addEventListener("click", function () {
+                const titulo = document.getElementById("titulo").value;
+                const autor = document.getElementById("autor").value;
+    
+                if (titulo && autor) {
+                    const transaction = db.transaction(["livros"], "readwrite");
+                    const objectStore = transaction.objectStore("livros");
+                    const livro = { titulo: titulo, autor: autor };
+                    const request = objectStore.add(livro);
+    
+                    request.onsuccess = function () {
+                        document.getElementById("titulo").value = "";
+                        document.getElementById("autor").value = "";
+                        listarLivros(db);
+                    };
+    
+                    transaction.oncomplete = function () {
+                        console.log("Livro cadastrado com sucesso!");
+                    };
+    
+                    transaction.onerror = function () {
+                        console.error("Erro ao cadastrar livro.");
+                    };
+                }
+            });
+    
+            listarLivros(db);
+        };
+    
+        request.onerror = function (e) {
+            console.error("Erro ao abrir o banco de dados:", e.target.error);
+        };
+    });
+    
+    function listarLivros(db) {
+        const transaction = db.transaction(["livros"], "readonly");
+        const objectStore = transaction.objectStore("livros");
+    
+        const listaLivros = document.getElementById("lista-livros");
+        listaLivros.innerHTML = "";
+    
+        objectStore.openCursor().onsuccess = function (e) {
+            const cursor = e.target.result;
+            if (cursor) {
+                const livro = cursor.value;
+                const li = document.createElement("li");
+                li.textContent = `Título: ${livro.titulo}, Autor: ${livro.autor}`;
+                listaLivros.appendChild(li);
+                cursor.continue();
+            }
+        };
+    }
+    </script>
+</body>
+</html>

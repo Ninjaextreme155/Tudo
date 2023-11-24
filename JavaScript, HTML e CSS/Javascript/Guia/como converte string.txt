@@ -1,0 +1,9 @@
+Para converter um objeto em uma string, JavaScript executa estas etapas:
+• Se o objeto tem um método toString(), JavaScript o chama. Se ele retorna um valor primitivo,
+JavaScript converte esse valor em uma string (se já não for uma string) e retorna o resultado
+dessa conversão. Note que as conversões de valor primitivo para string estão todas bem definidas na Tabela 3-2.
+• Se o objeto não tem método toString() ou se esse método não retorna um valor primitivo,
+então JavaScript procura um método valueOf(). Se o método existe, JavaScript o chama. Se o
+valor de retorno é primitivo, a JavaScript converte esse valor em uma string (se ainda não for)
+e retorna o valor convertido.
+• Caso contrário, JavaScript não pode obter um valor primitivo nem de toString() nem de valueOf(); portanto, lança um TypeError.

@@ -1,0 +1,5 @@
+Para converter um objeto em um número, JavaScript faz a mesma coisa, mas tenta primeiro o método valueOf():
+• Se o objeto tem um método valueOf() que retorna um valor primitivo, JavaScript converte (se
+necessário) esse valor primitivo em um número e retorna o resultado.
+• Caso contrário, se o objeto tem um método toString() que retorna um valor primitivo, JavaScript converte e retorna o valor.
+• Caso contrário, JavaScript lança um TypeError.

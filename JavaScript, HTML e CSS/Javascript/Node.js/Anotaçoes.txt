@@ -1,0 +1,78 @@
+Express{
+    Roteamento: "Apartir do express é permitido a definiçãoi de rotas que fazem um mapeiamento da URLs especificas para funçoes de manipulação. Isso facilita a criação de aplicativos com diferentes paginas e endpoints: é um termo comum no contexto de desenvolvimento de software e redes de computadores. Em termos gerais, um endpoint é um ponto de comunicação onde os dados podem ser transmitidos ou recebidos em uma rede ou sistema de software"
+    
+    Middleware:  O Express.js é conhecido por por sua arquitetura baseada em middleware. O middleware é usado para processar solicitações HTTP, realizar autenticação, manipular erros e realizar outras tarefas intermediarias. voce pode usar middleware de terceiros ou criar o seu proprio.
+
+    Manipulação  de solicitaçoes e respostas: O Express.js oferece uma veriedade  de metodos para lidar com solicitaçoes e gerar respostas, como res.send() , res.json() , res. render() e muito mais.
+
+    Integração de motores de modelo: O Express.js permite que voce integre facilmente motores de modelo, como EJS, Pug  ou Hndlebars, para renderizar paginas HTML dinamicas.
+
+    Tratamento de erros: O Express.js facilita o tratamento de erros, seja lidando com erros de rotas não encontradas(404) ou erros internos do servidor (500)
+
+    Suporte a APIs RESTful: O Express.js é frequentemente usado para criar APIs RESTful devido a capacidade de lidar com rotas, solicitações JSON e middleware. 
+}
+res pricipais: {
+
+    res.send(): O método res.send() é usado para enviar uma resposta HTTP com conteúdo de diversos tipos, como texto simples, JSON, HTML, ou qualquer outro tipo de dados. Ele é flexível e pode ser usado para enviar uma ampla variedade de conteúdo. Por exemplo:
+
+    app.get("/texto", (req, res) => {
+    res.send("Isso é um texto simples.");
+    });
+
+    app.get("/json", (req, res) => {
+    res.send({ mensagem: "Isso é um JSON." });
+    });
+
+    res.render(): O método res.render() é usado quando você deseja renderizar um arquivo de modelo (normalmente, um arquivo HTML) usando um mecanismo de visualização, como EJS, Pug, Handlebars, etc. Isso é comumente usado para gerar páginas da web dinâmicas, onde você insere dados dinâmicos no modelo. Por exemplo:
+    
+    app.set('view engine', 'ejs');
+
+    app.get("/pagina", (req, res) => {
+    res.render("pagina", { titulo: "Título da Página" });
+    });
+
+
+    res.sendFile(): O método res.sendFile() é usado para enviar arquivos estáticos, como imagens, arquivos CSS, JavaScript e até mesmo arquivos HTML estáticos. Ele permite que você sirva arquivos diretamente do sistema de arquivos do servidor. Por exemplo:
+
+    app.use(express.static(__dirname + '/public'));
+
+    app.get("/imagem", (req, res) => {
+    res.sendFile(__dirname + '/public/imagem.png');
+    });
+
+    res.redirect(): Este método é usado para redirecionar o cliente para outra URL. É comumente usado após uma ação de login bem-sucedida ou para redirecionar os clientes para uma página de erro personalizada. Exemplo:
+
+    app.get("/redirecionar", (req, res) => {
+    res.redirect("/outra-rota");
+    });
+    res.json(): Este método é usado para enviar uma resposta no formato JSON. É útil ao criar uma API RESTful para fornecer dados em formato JSON. Exemplo:
+    
+    app.get("/api/dados", (req, res) => {
+    res.json({ mensagem: "Isso é um JSON" });
+    });
+    res.status(): Este método permite definir o código de status HTTP na resposta. É frequentemente usado para indicar o resultado da solicitação, como sucesso (200), não encontrado (404), erro do servidor (500), etc. Exemplo:
+    
+    app.get("/erro", (req, res) => {
+    res.status(404).send("Página não encontrada");
+    });
+    res.download(): Este método é usado para enviar um arquivo como uma resposta para o cliente, forçando o navegador a fazer o download do arquivo. Exemplo:
+    
+    app.get("/download", (req, res) => {
+    res.download("caminho-para-o-arquivo/arquivo.pdf");
+    });
+    res.end(): Este método é usado para encerrar uma resposta sem enviar dados. É útil em casos em que você deseja encerrar uma solicitação sem enviar uma resposta. Exemplo:
+    
+    app.get("/encerrar", (req, res) => {
+    res.end();
+    });
+}
+bodyparser{
+    body-parser é um middleware (software intermediário) para o Node.js que é comumente usado com o framework Express.js, embora também possa ser usado em outras estruturas ou aplicativos Node.js. Sua principal função é analisar os dados enviados no corpo de uma solicitação HTTP e torná-los disponíveis em um formato mais conveniente para o seu aplicativo.
+
+    Quando um cliente faz uma solicitação HTTP POST ou PUT, ele pode enviar dados no corpo da solicitação. Esses dados podem ser formulários da web, dados JSON, dados XML ou qualquer outra coisa. O body-parser ajuda a analisar esses dados e torná-los acessíveis em seu aplicativo.
+
+    O body-parser oferece suporte a diferentes formatos de dados no corpo da solicitação, como formulários codificados, JSON e XML. Ele analisa os dados do corpo da solicitação e os converte em objetos JavaScript que podem ser facilmente manipulados pelo seu código.
+}
+
+body-parser{a chamada dele: app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json()); vem antes das rotas}

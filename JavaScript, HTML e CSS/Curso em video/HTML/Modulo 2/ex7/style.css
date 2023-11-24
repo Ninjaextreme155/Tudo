@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*
+#520E0E
+#D96666
+#D22423
+#522626
+#9E1B1B
+*/
+:root{
+    --cor0 : #520E0E;
+    --cor1 : #D96666;
+    --cor2 : #D22423;
+    --cor3 : #522626;
+    --cor4 : #9E1B1B;
+}
+body{
+    background-color: var(--cor1);
+    
+}

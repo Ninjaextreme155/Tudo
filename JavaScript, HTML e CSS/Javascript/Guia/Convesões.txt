@@ -1,0 +1,37 @@
+Valor Convertido em:
+String Número Booleano Objeto
+undefined "undefined" NaN false lança TypeError
+null "null" 0 false lança TypeError
+true "true" 1 new Boolean(true)
+false "false" 0 new
+Boolean(false)
+"" (string vazia) 0 false new String("")
+"1.2" (não vazio,
+numérico)
+1.2 true new String("1.2")
+"one" (não vazio, não
+numérico)
+NaN true new String("one")
+0 "0" false new Number(0)
+-0 "0" false new Number(-0)
+NaN "NaN" false new Number(NaN)
+Infinity "Infinity" true new
+Number(Infinity)
+-Infinity "-Infinity" true new Number(-
+Infinity)
+1 (finito, não zero) "1" true new Number(1)
+{} (qualquer objeto) consulte a Seção
+3.8.3
+consulte a
+Seção 3.8.3
+true
+[] (array vazio) "" 0 true
+[9] (1 elt numérico) "9" 9 true
+['a'] (qualquer outro
+array)
+use o método join() NaN true
+function(){} (qualquer
+função)
+consulte a Seção
+3.8.3
+NaN true

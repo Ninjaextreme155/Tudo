@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+</head>
+<body>
+<input type="text" id="inputTexto">
+<button id="botao" onclick= "teste()">Clique Aqui</button>
+<hr>
+<div>
+    <input type="text" id="resposta">
+</div>
+<script>
+  // Obtém referências para o elemento de entrada e o botão
+  var inputTexto = document.getElementById('inputTexto');
+  var botao = document.getElementById('botao');
+  var resposta = document.getElementById('resposta')
+
+  // Função para tratar o evento de tecla pressionada
+  function teclaPressionada(event) {
+    // Verifica se a tecla pressionada é "Enter" (código 13)
+    if (event.keyCode === 13) {
+      // Aciona o clique no botão
+      botao.click();
+    }
+  }
+
+  // Define o manipulador de eventos de teclado para o elemento de entrada
+  inputTexto.addEventListener('keypress', teclaPressionada);
+  function teste(){
+      resposta.value = inputTexto.value
+  }
+</script>
+</body>
+</html>

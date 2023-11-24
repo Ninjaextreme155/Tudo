@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    h1{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    body{
+        text-align: center;
+        background-color:aquamarine;
+    }
+    div#geral{
+        background-color: white;
+        height: auto;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid 1px;
+        border-radius:20px ;
+        box-shadow: 5px 3px 5px 3px;
+    }
+    .escre{
+        margin: 20px;
+    }
+</style>
+    <title>Desafio 2</title>
+</head>
+<body>
+    <h1>Aniversario</h1>
+    <div id="geral">
+    <div id="redes">
+       <input type="text" name="nome" id="nome" placeholder="Escreva seu nome" class="escre"> Escreva sua data de aniversario:
+       <input type="number" name="data de aniversario" id="dataani" placeholder="Dia" style="width: 50px;"> /
+       <input type="number" name="data de aniversario" placeholder="Mês" style="width: 50px;" id="mounth">
+       <button id="but" onclick="aniver()">Clique!</button>
+    </div>
+    <div>
+    <p id="res" style="font-size: 30px; color: blue; font-weight: bolder;"></p>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

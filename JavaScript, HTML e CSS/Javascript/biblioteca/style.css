@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(86, 172, 143);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+div#all{
+    background-color:white ;
+    height: auto;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 1px 2px black;
+    color: black;
+}
+input.text{
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid;
+}
+table{
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+th{
+    border: 1px solid;
+    padding: 8px;
+}
+td{
+    border: 1px solid;
+    padding: 8px;
+}
+div#fim{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

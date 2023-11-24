@@ -1,0 +1,51 @@
+#ladosnormaisc{
+    display:none;
+}
+#ladossemiperimetroc{
+    display: none;
+}
+#botaonormais{
+   margin-left:70px;
+}
+#botaosemiperimetro{
+    margin-left: 70px;
+}
+#areaespaco{
+    display: none;
+}
+body {
+background: rgb(105, 105, 230);
+font: normal 15pt Arial;
+}
+
+header {
+color: white;
+text-align: center;
+}
+.text{
+    width: 70px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    border: solid 1px;
+}
+button{
+    border-radius: 20px;
+    border: solid 2px red;
+    background-color: red;
+    color: white;
+}
+section {
+background: white;
+border-radius: 10px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.671);
+}
+
+footer {
+color: white;
+text-align: center;
+font-style: italic;
+}

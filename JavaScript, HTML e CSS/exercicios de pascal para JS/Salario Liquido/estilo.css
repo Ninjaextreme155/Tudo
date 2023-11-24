@@ -1,0 +1,52 @@
+body {
+background: rgb(105, 105, 230);
+font: normal 15pt Arial;
+}
+cr{
+    font: normal 13pt Arial;
+    color: rgb(78, 78, 78);
+}
+ch{
+    margin-left:85px;
+    color: rgb(78, 78, 78);
+    font: normal 13pt Arial;
+}
+.number{
+    width: 80px;
+    text-align: center;
+}
+input#desconto{
+    margin-left: 90px;
+}
+.button{
+    margin-left: 120px;
+}
+input#salaliq{
+    width: 80px;
+    text-align: center;
+    margin-left: 90px;
+}
+fe{
+    color: rgb(78, 78, 78);
+    font: normal 13pt Arial;
+    margin-left:80px;
+}
+header {
+color: white;
+text-align: center;
+}
+
+section {
+background: white;
+border-radius: 10px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.671);
+}
+
+footer {
+color: white;
+text-align: center;
+font-style: italic;
+}

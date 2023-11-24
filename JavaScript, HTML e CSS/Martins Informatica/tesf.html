@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martins Informática</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="martins-logo-removebg-preview.png">
+    <style>
+        .opcoes-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .opcoes {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        .btn-opcoes {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="logo">
+            <img src="martins-logo.png" alt="" class="image">
+            <h1>Martins</h1>
+            <h3>Celulares e Acessórios</h3>
+        </div>
+
+        <div id="opcoes">
+            <div class="opcoes-container">
+                <button class="btn-opcoes" onclick="toggleOpcoes('opcoes-celulares')">Celulares</button>
+                <div class="opcoes" id="opcoes-celulares">
+                    <button>Motorola</button><br>
+                    <button>Samsung</button><br>
+                    <button>Redmi</button><br>
+                    <button>Apple</button>
+                </div>
+            </div>
+
+            <div class="opcoes-container">
+                <button class="btn-opcoes" onclick="toggleOpcoes('opcoes-acessorios')">Acessórios</button>
+                <div class="opcoes" id="opcoes-acessorios">
+                    <button>Capinhas</button><br>
+                    <button>Peliculas</button><br>
+                    <button>Sons e Headsets</button>
+                </div>
+            </div>
+
+            <div class="opcoes-container">
+                <button class="btn-opcoes" onclick="toggleOpcoes('opcoes-redes')">Redes</button>
+                <div class="opcoes" id="opcoes-redes">
+                    <button>Instagram</button><br>
+                    <button>Facebook</button><br>
+                    <button>Whatsapp</button>
+                </div>
+            </div>
+
+            <div class="opcoes-container">
+                <button class="btn-opcoes" onclick="toggleOpcoes('opcoes-assistencia')">Assistência</button>
+                <div class="opcoes" id="opcoes-assistencia">
+                    <button>Telas e Traseiras</button><br>
+                    <button>Displays e Conectores</button><br>
+                    <button>Outros</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="cont">
+            <p><button class="opcoes" onclick="sobre()">Sobre Nós</button></p>
+            <p id="news">news</p>
+        </div>
+
+        <script>
+            function toggleOpcoes(opcoesId) {
+                var opcoes = document.getElementById(opcoesId);
+                var todasOpcoes = document.getElementsByClassName('opcoes');
+
+                for (var i = 0; i < todasOpcoes.length; i++) {
+                    todasOpcoes[i].style.display = 'none';
+                }
+
+                if (opcoes.style.display === 'none') {
+                    opcoes.style.display = 'block';
+                } else {
+                    opcoes.style.display = 'none';
+                }
+            }
+
+            function sobre() {
+                window.location.href = "sobre-nos.html";
+            }
+        </script>
+    </div>
+</body>
+</html>
+

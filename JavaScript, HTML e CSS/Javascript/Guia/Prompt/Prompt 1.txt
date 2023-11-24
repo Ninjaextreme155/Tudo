@@ -1,0 +1,63 @@
+> function equalArray(a,b){if(a.length != b.length) return false; for(var i = 0;i < a.length; i++)if(a[i] !== b[i])return false; return true;}
+undefined
+> a===b
+Uncaught ReferenceError: a is not defined
+> var a = 10 + "objects"
+undefined
+> var a
+undefined
+> var a = 10 + "objects"
+undefined
+> var b = "7"*"4"
+undefined
+> b
+28
+> null == undefined
+true
+> "0"==0
+true
+> 0==false
+true
+> "0"==false
+true
+> Number("3")
+3
+> String(false)
+'false'
+> Boolean([])
+true
+> Object(3)
+[Number: 3]
+> x+""
+Uncaught ReferenceError: x is not defined
+> var x = 0
+undefined
+> x+""
+'0'
+> +x
+0
+> !!x
+false
+> var n= 17
+undefined
+> binary_string = n.tostring(2)
+Uncaught TypeError: n.tostring is not a function
+> n=123456.7899
+123456.7899
+> n.toFixed(0)
+'123457'
+> n.toFixed(2)
+'123456.79'
+> n.toFixed(5)
+'123456.78990'
+> n.toExponential(1)
+'1.2e+5'
+> n.toExponential(3)
+'1.235e+5'
+> n.toExponential(4)
+'1.2346e+5'
+> n.toExponential(7)
+'1.2345679e+5'
+> n.toExponential(10)
+'1.2345678990e+5'
+>

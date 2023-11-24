@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    text-align: center;
+}
+:root{
+    --color1 : #B0ABC2;
+    --color2 : #B34F51;
+    --color3 : #233A63;
+    --color4 : #A95950;
+    --color5 : #87A5C1;
+}
+body{
+    background-color: rgb(185, 185, 185);
+}
+h1{
+    background-color: white;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    border:solid 1px ;
+    margin-top: 10px;
+}
+div#autoriza{
+    background-color: white;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 730px;
+}
+div#termo{
+    margin-top: 10px;
+    background-color: rgb(250, 250, 237);
+    width: 130px;
+    margin-left: 10px;
+}
+#cabeça{
+    text-align:start;
+    color: white;
+    font-family: sans-serif;
+    font-weight:lighter ;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+h2#meio{
+    background-color: var(--color2);
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    position: relative;
+    bottom: 25px;
+}
+header{
+    background-color: var(--color3);
+}
+#img1{
+    width: 100px;
+    text-align: end;
+    position: relative;
+    top: -25px;
+    left: 120px;
+}
+input,label{
+    margin-top: 10px;
+    text-align: start;
+}
+#nome{
+    width:300px;
+    text-align: start;
+}
+#quarto,#labquarto{
+    position: relative;
+    right: 2px;
+    width: 60px;
+}
+#ra{
+    width: 80px;
+}
+#bolsa{
+    width: 120px;
+}
+#motivo{
+    width: 230px;
+}
+#destino{
+    width: 290px;
+}
+.saida{
+    position: relative;
+    left: 60px;
+    bottom: 55px;
+    width: 165px;
+}
+.retorno{
+    position: relative;
+    left: 90px;
+    bottom: 58px;
+    width: 165px;
+}
+#labprecep{
+    font-weight: bold;
+    margin-left: 0px;
+    position: relative;
+    bottom: px;
+    left: px;
+}
+.box{
+    height: 100px;
+    width: 350px;
+    border: solid; 
+    display: inline-block;
+    margin-right: 200px;
+    position: relative;
+    left: 25px;
+}
+#but1{
+    position: relative;
+    bottom: 30px;
+    right: 120px;
+}
+#but2{
+    position: relative;
+    top: 15px;
+}

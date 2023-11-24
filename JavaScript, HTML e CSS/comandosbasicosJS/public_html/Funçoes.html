@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Funçoes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            /*funçao sem parametros*/
+            function pl(){
+                document.write("<br>");
+            }
+            pl();
+            /*Funçao procedimento */
+            function multiplicar(a,b){
+                var multi = a * b;
+                document.write(multi);
+            }
+            var n1 = parseInt(prompt("Digite um numero"));
+            var n2 = parseInt(prompt("Digite outro numero"));
+            document.write("Funçao procedimento: ");
+            multiplicar(n1,n2);
+            pl()
+            /*funçao com retorno de valor */
+            function multiplicaçao(c,d){
+                return c * d;
+            }
+            var n3 = parseInt(prompt("Digite um numero"));
+            var n4 = parseInt(prompt("Digite outro numero"));
+            document.write("Funçao com retorno: ");
+            var multi = multiplicaçao(n3,n4);
+            document.write(multi);
+        </script>
+    </body>
+</html>

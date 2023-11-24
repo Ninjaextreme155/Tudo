@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>inserindo videos hospedados localmente</h1>
+    <p>este video esta hospedado no meu proprio servidor</p>
+    <video controls width="500"> 
+      <source src="Video2.mp4" type="video/mp4">
+      <source src="Video4.mkv" type="video/mkv">
+      <source src="Video4.m4v" type="video/m4v">
+      <source src="Video4.webm" type="video/webm">
+      <source src="Video4.ogv" type="video/ogv">
+      <p>seu servidor nao consegue rodar esse video <a href="Video1.mp4">clique para baixar ele</a></p>
+    </video>
+     <h1>teste</h1>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/q8mgiv84tQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="ttt"></iframe>
+     <script>
+        var ttt = document.getElementById('ttt')
+        ttt.controls = false;
+     </script>
+</body>
+</html>

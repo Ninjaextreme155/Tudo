@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Funçao IMC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function IMC(peso,altura){
+                var imc = peso / (Math.pow(altura,2));
+                document.write("O valor do IMC é "+ imc.toFixed(2));
+            }
+            var peso1 = parseFloat(prompt("Qual é seu peso: "));
+            var altura1 = parseFloat(prompt("Qual sua altura: "));
+            IMC(peso1,altura1);
+         
+        </script>
+    </body>
+</html>

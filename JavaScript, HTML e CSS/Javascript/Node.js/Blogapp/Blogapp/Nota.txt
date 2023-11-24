@@ -1,0 +1,12 @@
+Baixar
+express
+handlebars
+path
+bodyParser
+mongoose
+session
+flash
+mongodb
+node
+nodemon
+Nesse projeto estou fazendo em um PC 32x entao talvez algumas coisas estao habilitada para as versões antigas desses programas para funcionar em 32x

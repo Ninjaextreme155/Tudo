@@ -1,0 +1,5 @@
+programa e app que de para criar autorizaçoes de saida mais facil aqui no unasp
+requisitos: 
+-bancos de dados
+-react native 
+-facilidade

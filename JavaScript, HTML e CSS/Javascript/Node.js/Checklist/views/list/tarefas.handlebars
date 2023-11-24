@@ -1,0 +1,13 @@
+<h2>Lista de tarefas: </h2>
+
+{{#each tarefas}}
+<div class="card mt-4">
+    <div class="card-body">
+        <input type="checkbox" name="list" id="list">
+       <h4>{{list}}</h4>
+
+    </div>
+</div>
+{{else}}
+<h4 class="mt-3">Nenhuma tarefa registrada </h4>
+{{/each}}

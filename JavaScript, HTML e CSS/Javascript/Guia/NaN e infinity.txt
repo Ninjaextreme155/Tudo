@@ -1,0 +1,18 @@
+Infinity // Uma variável de leitura/gravação inicializada como
+ // Infinity.
+Number.POSITIVE_INFINITY // O mesmo valor, somente para leitura.
+1/0 // Este também é o mesmo valor.
+Number.MAX_VALUE + 1 // Isso também é avaliado como Infinity.
+Number.NEGATIVE_INFINITY // Essas expressões são infinito negativo.
+-Infinity
+-1/0
+-Number.MAX_VALUE – 1
+NaN // Uma variável de leitura/gravação inicializada como NaN.
+Number.NaN // Uma propriedade somente para leitura contendo o mesmo
+ // valor.
+0/0 // Avaliado como NaN.
+Number.MIN_VALUE/2 // Estouro negativo: avaliado como 0
+-Number.MIN_VALUE/2 // Zero negativo
+-1/Infinity // Também 0 negativo
+-0
+O valor not-a-num

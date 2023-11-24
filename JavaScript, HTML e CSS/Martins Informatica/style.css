@@ -1,0 +1,109 @@
+.opcoes-container {
+    position: relative;
+    display: inline-block;
+}
+
+.opcoes {
+    display: none;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    left: 20px;
+}
+
+.btn-opcoes:hover {
+    background-color: grey;
+}
+
+.btn-opcoes {
+    margin-bottom: 10px;
+    border: solid 2px red;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    width: 235px;
+    height: 50px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.btn-opcoes2{
+    margin-bottom: 10px;
+    border: solid 2px red;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    width: 200px;
+    height: 25px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+body {
+    background-image: url(preto.avif);
+}
+
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    -webkit-text-stroke: 1px red;
+}
+
+h3 {
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+div#logo {
+    border: solid red;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+div#opcoes {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div#cont {
+    color: white;
+    margin-top: 100px;
+}
+
+div#all {
+    border: solid 2px red;
+    margin: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    background-image: url(bckground-martins.jpg);
+}
+
+p#news {
+    font-size: 30px;
+    font-style: italic;
+    border: solid 1px;
+    margin: 35px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
